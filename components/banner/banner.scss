@@ -1,0 +1,37 @@
+.banner {
+  max-width: rem-calc(480);
+  width: 100vw;
+  height: 100dvh;
+  @include bg-image-base-style();
+  @include bg-image-path(banner, bg, jpg);
+  &__link {
+    display: flex;
+    width: rem-calc(12);
+    height: rem-calc(12);
+    @include bg-image-base-style();
+    @include bg-image-path(cross, cross, svg, true);
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-heavy;
+    line-height: unitless-lh(42, 46);
+    color: $white-color;
+    text-align: center;
+    word-break: break-word;
+  }
+  .container {
+    display: grid;
+    align-content: space-between;
+    grid-row-gap: rem-calc(5);
+    align-content: space-between;
+    width: calc(100% - rem-calc(48));
+    height: calc(100% - rem-calc(60));
+    padding: rem-calc(30) rem-calc(24);
+  }
+}
+
+@import "./features/features";
+@import "./actions/actions";
+@import "./navigation/navigation";

@@ -1,0 +1,9 @@
+.banner-actions-offers {
+  &__list {
+    @include list-unstyled();
+    display: grid;
+    grid-row-gap: rem-calc(8);
+  }
+}
+
+@import "./item/item";

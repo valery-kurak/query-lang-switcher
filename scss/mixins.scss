@@ -1,0 +1,78 @@
+@mixin list-unstyled() {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin bg-image-base-style() {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-image-path($directory, $name, $format, $ratio1dot5: false) {
+  background-image: url('/#{$directory}/#{$name}.#{$format}');
+  @if $ratio1dot5 {
+    @media (-webkit-min-device-pixel-ratio: 1.5) {
+      background-image: url('/#{$directory}/#{$name}@1.5x.#{$format}');
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url('/#{$directory}/#{$name}@2x.#{$format}');
+  }
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    background-image: url('/#{$directory}/#{$name}@3x.#{$format}');
+  }
+}
+
+@mixin offer-info-lang-style() {
+  .banner-actions-offers-item-info {
+    &__period,
+    &__price {
+      font-size: $font-size-sm-xl;
+    }
+  }
+}
+
+@mixin container-lang-style() {
+  .banner {
+    .container {
+      @media (max-width: rem-calc(374.98)) {
+        width: calc(100% - rem-calc(32));
+        height: calc(100% - rem-calc(40));
+        padding: rem-calc(20) rem-calc(16);
+      }
+    }
+  }
+}
+
+@mixin navigation-lang-style() {
+  .banner-navigation {
+    &__list {
+      @media (max-width: rem-calc(429.98)) {
+        column-gap: rem-calc(20);
+      }
+    }
+  }
+  .banner-navigation-item {
+    &__link {
+      font-size: $font-size-xs;
+    }
+  }
+}
+
+@mixin navigation-sm-lang-style() {
+  .banner-navigation {
+    &__list {
+      column-gap: rem-calc(10);
+    }
+  }
+  .banner-navigation-item {
+    &__link {
+      font-size: $font-size-xs;
+      @media (max-width: rem-calc(429.98)) {
+        font-size: $font-size-xs-sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.banner-features-item {
+  display: grid;
+  height: rem-calc(138);
+  @include bg-image-base-style();
+  border-radius: rem-calc(10.8);
+  &--unlimited {
+    @include bg-image-path(features, f1, png, true);
+  }
+  &--exclusive {
+    @include bg-image-path(features, f2, png);
+  }
+  &--magic {
+    @include bg-image-path(features, f3, png, true);
+  }
+  &__text {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: rem-calc(10.8) rem-calc(7.2);
+    font-size: $font-size-xs;
+    line-height: unitless-lh(11, 13.13);
+    color: $white-color;
+    word-break: break-word;
+  }
+}

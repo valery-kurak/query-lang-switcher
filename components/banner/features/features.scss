@@ -1,0 +1,11 @@
+.banner-features {
+  margin-top: rem-calc(10);
+  &__list {
+    @include list-unstyled();
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: rem-calc(14);
+  }
+}
+
+@import "./item/item";

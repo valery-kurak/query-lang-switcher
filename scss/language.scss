@@ -1,0 +1,40 @@
+html {
+  :lang(de) {
+    @include container-lang-style();
+    @include navigation-sm-lang-style();
+    @include offer-info-lang-style();
+  }
+  :lang(es) {
+    @include navigation-lang-style();
+    .banner-actions-offers-item-info {
+      &__period,
+      &__price {
+        @media (max-width: rem-calc(429.98)) {
+          font-size: $font-size-sm-xl;
+        }
+      }
+    }
+  }
+  :lang(fr) {
+    @include container-lang-style();
+    @include navigation-sm-lang-style();
+    @include offer-info-lang-style();
+  }
+  :lang(pt) {
+    @include navigation-lang-style();
+    @include offer-info-lang-style();
+  }
+  :lang(ja) {
+    .banner-actions-offers-item {
+      &:not(:first-of-type) {
+        .banner-actions-offers-item-info {
+          grid-template-rows: repeat(4, 1fr);
+          &__period,
+          &__price {
+            grid-row: 2 / 4;
+          }
+        }
+      }
+    }
+  }
+}

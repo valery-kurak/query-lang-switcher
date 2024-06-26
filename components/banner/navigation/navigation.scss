@@ -1,0 +1,10 @@
+.banner-navigation {
+  &__list {
+    @include list-unstyled();
+    display: flex;
+    column-gap: rem-calc(31);
+    justify-content: center;
+  }
+}
+
+@import "./item/item";

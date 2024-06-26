@@ -1,0 +1,7 @@
+<li class="banner-actions-offers-item">
+  <input type="radio" id="{{i18n}}" name="offer" {{#if isChecked}}checked{{/if}} class="banner-actions-offers-item__input">
+  {{> banner/actions/offers/item/info/info isBestOffer=this.isBestOffer}}
+  {{#if isBestOffer}}
+    <p i18n="BEST OFFER" class="banner-actions-offers-item__offer"></p>
+  {{/if}}
+</li>

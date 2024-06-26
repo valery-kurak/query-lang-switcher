@@ -1,0 +1,11 @@
+<div class="banner-actions-offers-item-info">
+  <p class="banner-actions-offers-item-info__period">
+    <span i18n="{{i18n}}"></span>
+    {{#if isBestOffer}}
+      <span i18n="Just price per year" id="pricePerYear"></span>
+    {{/if}}
+  </p>
+  <p class="banner-actions-offers-item-info__price">
+    <span i18n="price <br>per week" id="{{#if isBestOffer}}pricePerWeekSpecial{{else}}pricePerWeek{{/if}}"></span>
+  </p>
+</div>
