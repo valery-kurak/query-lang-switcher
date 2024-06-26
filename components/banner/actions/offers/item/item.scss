@@ -15,6 +15,7 @@
     height: 100%;
     margin: 0;
     appearance: none;
+    -webkit-tap-highlight-color: transparent;
     &:not(:checked) {
       cursor: pointer;
     }
