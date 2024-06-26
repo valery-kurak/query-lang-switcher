@@ -6,5 +6,6 @@ export default {
     handlebars({
       partialDirectory: resolve(__dirname, 'components'),
     }),
-  ]
+  ],
+  base: '/query-lang-switcher/'
 };
