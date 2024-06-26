@@ -6,7 +6,7 @@
   padding-left: rem-calc(24);
   background-color: rgba($white-color, 0.1);
   border-radius: rem-calc(32);
-  border: 1px solid rgba($white-color, 0.3);
+  border: 1px solid transparent;
   &__input {
     position: absolute;
     top: 0;
