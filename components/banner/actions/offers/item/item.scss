@@ -18,6 +18,11 @@
     &:not(:checked) {
       cursor: pointer;
     }
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
   }
   &:has(.banner-actions-offers-item__input:checked) {
     background-color: rgba($white-color, 0.3);
