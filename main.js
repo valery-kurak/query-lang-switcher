@@ -14,7 +14,6 @@ const wrongLanguage = !languagesList.includes(selectedLanguage);
 
 // Set final language to project
 const finalLanguage = wrongLanguage ? languagesList[1] : selectedLanguage;
-console.log(finalLanguage);
 const htmlTag = document.documentElement.setAttribute('lang', finalLanguage);
 
 // Fetch language data
