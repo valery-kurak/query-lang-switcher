@@ -1,12 +1,16 @@
 .banner-actions-offers-item {
   position: relative;
-  padding-top: rem-calc(8);
+  height: rem-calc(39);
+  padding-top: rem-calc(8.5);
   padding-right: rem-calc(65);
-  padding-bottom: rem-calc(8);
+  padding-bottom: rem-calc(8.5);
   padding-left: rem-calc(24);
   background-color: rgba($white-color, 0.1);
   border-radius: rem-calc(32);
-  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  @media (max-width: rem-calc(389.98)) {
+    padding-right: rem-calc(63);
+  }
   &__input {
     position: absolute;
     top: 0;
@@ -27,7 +31,7 @@
   }
   &:has(.banner-actions-offers-item__input:checked) {
     background-color: rgba($white-color, 0.3);
-    border: 1px solid $white-color;
+    outline: 1px solid $white-color;
   }
   &__offer {
     position: absolute;

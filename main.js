@@ -2,12 +2,19 @@
 const searchParams = new URLSearchParams(window.location.search);
 const queryLanguage = searchParams.get("lang");
 
+// Detect system language
+const systemLanguage = navigator.language.substring(0, 2);
+
+// Select query or system language by priority
+const selectedLanguage = queryLanguage || systemLanguage;
+
 // Languages array with inspection 
 const languagesList = ['de', 'en', 'es', 'fr', 'ja', 'pt'];
-const wrongLanguage = !languagesList.includes(queryLanguage);
+const wrongLanguage = !languagesList.includes(selectedLanguage);
 
 // Set final language to project
-const finalLanguage = wrongLanguage ? 'en' : queryLanguage;
+const finalLanguage = wrongLanguage ? languagesList[1] : selectedLanguage;
+console.log(finalLanguage);
 const htmlTag = document.documentElement.setAttribute('lang', finalLanguage);
 
 // Fetch language data

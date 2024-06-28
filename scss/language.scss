@@ -1,11 +1,60 @@
 html {
-  :lang(de) {
-    @include container-lang-style();
-    @include navigation-sm-lang-style();
-    @include offer-info-lang-style();
+  :lang(de),
+  :lang(fr) {
+    .banner {
+      &__link {
+        margin-bottom: rem-calc(120);
+        @media (max-width: 413.98px) {
+          margin-bottom: rem-calc(80);
+        }
+      }
+      &__title {
+        font-size: $font-size-lg-sm;
+        @media (max-width: 413.98px) {
+          font-size: $font-size-md-xl;
+        }
+      }
+    }
+    .banner-navigation {
+      &__list {
+        column-gap: rem-calc(10);
+      }
+    }
+    .banner-navigation-item {
+      &__link {
+        font-size: $font-size-xs;
+        @media (max-width: rem-calc(429.98)) {
+          font-size: $font-size-xs-md;
+        }
+        @media (max-width: rem-calc(389.98)) {
+          font-size: $font-size-xs-sm;
+        }
+      }
+    }
+    .banner-actions-offers-item-info {
+      &__period,
+      &__price {
+        font-size: $font-size-sm-xl;
+        @media (max-width: rem-calc(374.98)) {
+          font-size: $font-size-xs-xl;
+        }
+      }
+    }
   }
-  :lang(es) {
-    @include navigation-lang-style();
+  :lang(es),
+  :lang(pt) {
+    .banner-navigation {
+      &__list {
+        @media (max-width: rem-calc(429.98)) {
+          column-gap: rem-calc(20);
+        }
+      }
+    }
+    .banner-navigation-item {
+      &__link {
+        font-size: $font-size-xs;
+      }
+    }
     .banner-actions-offers-item-info {
       &__period,
       &__price {
@@ -15,24 +64,12 @@ html {
       }
     }
   }
-  :lang(fr) {
-    @include container-lang-style();
-    @include navigation-sm-lang-style();
-    @include offer-info-lang-style();
-  }
   :lang(pt) {
-    @include navigation-lang-style();
-    @include offer-info-lang-style();
-  }
-  :lang(ja) {
-    .banner-actions-offers-item {
-      &:not(:first-of-type) {
-        .banner-actions-offers-item-info {
-          grid-template-rows: repeat(4, 1fr);
-          &__period,
-          &__price {
-            grid-row: 2 / 4;
-          }
+    .banner {
+      &__title {
+        @media (max-width: rem-calc(389.98)) {
+          margin-bottom: rem-calc(40);
+          font-size: $font-size-lg-md;
         }
       }
     }

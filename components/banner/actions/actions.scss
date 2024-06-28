@@ -1,12 +1,15 @@
 .banner-actions {
   display: grid;
   grid-row-gap: rem-calc(16);
-  @media (max-width: rem-calc(374.98)) {
+  margin-bottom: rem-calc(44);
+  @media (max-width: rem-calc(389.98)) {
     grid-row-gap: rem-calc(8);
+    margin-bottom: rem-calc(20);
   }
   &__link {
     display: block;
     width: calc(100% - rem-calc(32));
+    height: calc(100% - rem-calc(32));
     padding: rem-calc(16);
     font-size: $font-size-md;
     font-weight: $font-weight-semibold;

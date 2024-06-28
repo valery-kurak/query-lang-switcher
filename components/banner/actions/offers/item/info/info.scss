@@ -1,12 +1,17 @@
 .banner-actions-offers-item-info {
-  display: grid;
-  grid-template-columns: 67% 33%;
-  grid-column-gap: rem-calc(20);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  grid-column-gap: rem-calc(50);
+  height: 100%;
+  @media (max-width: rem-calc(389.98)) {
+    column-gap: rem-calc(37);
+  }
   &__period {
     display: flex;
     flex-wrap: wrap;
     row-gap: rem-calc(2);
+    width: rem-calc(142);
     margin-top: 0;
     margin-bottom: 0;
     font-size: $font-size-base;
@@ -17,18 +22,23 @@
     span {
       &:first-child {
         width: 100%;
+        letter-spacing: -0.278px;
       }
       &:not(:first-child) {
+        letter-spacing: -0.446px;
         font-weight: $font-weight-base;
         color: rgba($white-color, 0.7);
       }
     }
   }
   &__price {
+    width: rem-calc(61);
     margin-top: 0;
     margin-bottom: 0;
     font-size: $font-size-base;
+    letter-spacing: -0.631px;
     color: rgba($white-color, 0.7);
+    white-space: nowrap;
     word-break: break-word;
   }
 }
