@@ -8,7 +8,7 @@
   background-color: rgba($white-color, 0.1);
   border-radius: rem-calc(32);
   outline: 1px solid transparent;
-  @media (max-width: rem-calc(389.98)) {
+  @media (max-width: 389.98px) {
     padding-right: rem-calc(63);
   }
   &__input {

@@ -1,20 +1,6 @@
 html {
   :lang(de),
   :lang(fr) {
-    .banner {
-      &__link {
-        margin-bottom: rem-calc(120);
-        @media (max-width: 413.98px) {
-          margin-bottom: rem-calc(80);
-        }
-      }
-      &__title {
-        font-size: $font-size-lg-sm;
-        @media (max-width: 413.98px) {
-          font-size: $font-size-md-xl;
-        }
-      }
-    }
     .banner-navigation {
       &__list {
         column-gap: rem-calc(10);
@@ -23,10 +9,10 @@ html {
     .banner-navigation-item {
       &__link {
         font-size: $font-size-xs;
-        @media (max-width: rem-calc(429.98)) {
+        @media (max-width: 427.98px) {
           font-size: $font-size-xs-md;
         }
-        @media (max-width: rem-calc(389.98)) {
+        @media (max-width: 389.98px) {
           font-size: $font-size-xs-sm;
         }
       }
@@ -35,8 +21,60 @@ html {
       &__period,
       &__price {
         font-size: $font-size-sm-xl;
-        @media (max-width: rem-calc(374.98)) {
+        @media (max-width: 374.98px) {
           font-size: $font-size-xs-xl;
+        }
+      }
+    }
+  }
+  :lang(fr) {
+    .banner {
+      &__link {
+        @media (max-width: 413.98px) {
+          margin-top: rem-calc(46);
+        }
+        @media (max-width: 389.98px) {
+          margin-top: rem-calc(4);
+          margin-bottom: rem-calc(84);
+        }
+      }
+      &__title {
+        @media (max-width: 413.98px) {
+          font-size: $font-size-lg-md;
+        }
+        @media (max-width: 389.98px) {
+          font-size: $font-size-lg-m;
+        }
+      }
+    }
+  }
+  :lang(de) {
+    .banner {
+      &__link {
+        margin-bottom: rem-calc(160);
+        @media (max-width: 429.98px) {
+          margin-bottom: rem-calc(150);
+        }
+        @media (max-width: 427.98px) {
+          margin-bottom: rem-calc(74);
+        }
+        @media (max-width: 413.98px) {
+          margin-bottom: rem-calc(120);
+        }
+        @media (max-width: 389.98px) {
+          margin-bottom: rem-calc(60);
+        }
+      }
+      &__title {
+        font-size: $font-size-lg-md;
+        @media (max-width: 427.98px) {
+          font-size: $font-size-lg-xs;
+          @media (max-width: 413.98px) {
+            font-size: $font-size-lg-md;
+          }
+          @media (max-width: 389.98px) {
+            font-size: $font-size-lg-sm;
+          }
         }
       }
     }
@@ -45,30 +83,36 @@ html {
   :lang(pt) {
     .banner-navigation {
       &__list {
-        @media (max-width: rem-calc(429.98)) {
+        @media (max-width: 427.98px) {
           column-gap: rem-calc(20);
         }
       }
     }
     .banner-navigation-item {
       &__link {
-        font-size: $font-size-xs;
+        @media (max-width: 427.98px) {
+          font-size: $font-size-xs;
+        }
       }
     }
     .banner-actions-offers-item-info {
       &__period,
       &__price {
-        @media (max-width: rem-calc(429.98)) {
-          font-size: $font-size-sm-xl;
+        @media (max-width: 427.98px) {
+          font-size: $font-size-md-xs;
         }
       }
     }
   }
   :lang(pt) {
     .banner {
+      &__link {
+        @media (max-width: 389.98px) {
+          margin-top: rem-calc(11);
+        }
+      }
       &__title {
-        @media (max-width: rem-calc(389.98)) {
-          margin-bottom: rem-calc(40);
+        @media (max-width: 389.98px) {
           font-size: $font-size-lg-md;
         }
       }

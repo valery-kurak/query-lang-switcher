@@ -2,7 +2,10 @@
   &__list {
     @include list-unstyled();
     display: grid;
-    grid-row-gap: rem-calc(8);
+    grid-row-gap: rem-calc(10);
+    @media (max-width: 427.98px) {
+      grid-row-gap: rem-calc(8);
+    }
   }
 }
 

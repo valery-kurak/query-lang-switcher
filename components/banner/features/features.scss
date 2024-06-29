@@ -1,6 +1,9 @@
 .banner-features {
-  margin-bottom: rem-calc(50);
-  @media (max-width: rem-calc(413.98)) {
+  margin-bottom: rem-calc(60);
+  @media (max-width: 427.98px) {
+    margin-bottom: rem-calc(49.7);
+  }
+  @media (max-width: 389.98px) {
     margin-bottom: rem-calc(40);
   }
   &__list {

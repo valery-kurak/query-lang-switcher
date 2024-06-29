@@ -4,7 +4,7 @@
   align-items: center;
   grid-column-gap: rem-calc(50);
   height: 100%;
-  @media (max-width: rem-calc(389.98)) {
+  @media (max-width: 389.98px) {
     column-gap: rem-calc(37);
   }
   &__period {
