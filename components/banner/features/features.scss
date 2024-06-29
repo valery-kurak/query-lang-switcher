@@ -5,6 +5,9 @@
   }
   @media (max-width: 389.98px) {
     margin-bottom: rem-calc(40);
+    @media (min-height: 668px) {
+      margin-bottom: rem-calc(64);
+    }
   }
   &__list {
     @include list-unstyled();

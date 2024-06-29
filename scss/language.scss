@@ -36,6 +36,10 @@ html {
         @media (max-width: 389.98px) {
           margin-top: rem-calc(4);
           margin-bottom: rem-calc(84);
+          @media (min-height: 668px) {
+            margin-top: rem-calc(14);
+            margin-bottom: rem-calc(124);
+          }
         }
       }
       &__title {
@@ -63,6 +67,9 @@ html {
         }
         @media (max-width: 389.98px) {
           margin-bottom: rem-calc(60);
+          @media (min-height: 668px) {
+            margin-bottom: rem-calc(68);
+          }
         }
       }
       &__title {
@@ -74,6 +81,9 @@ html {
           }
           @media (max-width: 389.98px) {
             font-size: $font-size-lg-sm;
+            @media (min-height: 668px) {
+              font-size: $font-size-lg;
+            }
           }
         }
       }
@@ -109,6 +119,9 @@ html {
       &__link {
         @media (max-width: 389.98px) {
           margin-top: rem-calc(11);
+          @media (min-height: 668px) {
+            margin-top: rem-calc(18);
+          }
         }
       }
       &__title {

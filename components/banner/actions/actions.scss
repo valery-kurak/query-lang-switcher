@@ -9,6 +9,10 @@
   @media (max-width: 389.98px) {
     grid-row-gap: rem-calc(8);
     margin-bottom: rem-calc(28);
+    @media (min-height: 668px) {
+      grid-row-gap: rem-calc(13);
+      margin-bottom: rem-calc(45);
+    }
   }
   &__link {
     display: block;

@@ -6,6 +6,9 @@
     @media (max-width: 427.98px) {
       grid-row-gap: rem-calc(8);
     }
+    @media (max-width: 389.98px) and (min-height: 668px) {
+      grid-row-gap: rem-calc(13);
+    }
   }
 }
 
